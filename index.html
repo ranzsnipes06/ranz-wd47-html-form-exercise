@@ -20,11 +20,14 @@
             <label for="#">Enter your First Name:<input type="text" required> </label>
             <label for="#">Enter your Last Name:<input type="text" required> </label>
             <label for="#">Enter your Email:<input type="email" required> </label>
-            <label for="#">Enter your Password<input type="password" required> </label>
+            <!-- <label for="#">Enter your Password<input type="password" minlength="8" pattern="[a-z0-5{8, }]" required> </label>  -->
+            <label for="#">Enter your Password<input type="password" pattern="[a-z0-5]{8}" required> </label> 
         </fieldset>
     <!-- Fieldset 2 -->
         <fieldset>
-
+            <label for="#"><input type="radio" name="account-type" id="">Personal Account</label>
+            <label for="#"><input type="radio" name="account-type" id="">Business Partner Account</label>
+            <label for="#"><input type="checkbox" required>I accept the <a href="#">terms and conditions</a></label>
         </fieldset> 
     <!-- Fieldset 3 -->
         <fieldset>
